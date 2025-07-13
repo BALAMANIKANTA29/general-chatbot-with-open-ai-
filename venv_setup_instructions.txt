@@ -1,0 +1,47 @@
+Step-by-step instructions to set up and run the chatbot application with Gemani AI integration:
+
+1. Open a terminal in the project root directory (where the `chatbot-app` folder is located).
+
+2. Create a Python virtual environment:
+   ```
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+   - On Windows:
+     ```
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```
+     source venv/bin/activate
+     ```
+
+4. Install the required dependencies:
+   ```
+   pip install -r chatbot-app/requirements.txt
+   ```
+
+5. Set the Google service account credentials environment variable:
+   - Replace `path_to_your_service_account_key.json` with the actual path to your Google service account JSON key file.
+   - On Windows:
+     ```
+     set GOOGLE_APPLICATION_CREDENTIALS=path_to_your_service_account_key.json
+     ```
+   - On macOS/Linux:
+     ```
+     export GOOGLE_APPLICATION_CREDENTIALS=path_to_your_service_account_key.json
+     ```
+
+6. Run the Flask application:
+   ```
+   python chatbot-app/app.py
+   ```
+
+7. Open your browser and navigate to `http://127.0.0.1:5000/` to access the chatbot UI.
+
+8. Test the chat functionality by sending messages and verifying responses.
+
+9. Test other features such as starting a new chat session, viewing chat history, and deleting chat history.
+
+If you encounter any issues during setup or testing, please provide the error messages or logs for further assistance.

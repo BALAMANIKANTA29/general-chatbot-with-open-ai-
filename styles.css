@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.message.user {
+    text-align: right;
+}
+
+.message.assistant {
+    text-align: left;
+    color: #444;
+}
+
+#chat-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#user-input:focus {
+    border-color: #007bff;
+}
+
+#chat-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+#chat-form button:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    flex-grow: 1;
+    margin: 0 5px;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #5a6268;
+}
+
+.history-window {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+}

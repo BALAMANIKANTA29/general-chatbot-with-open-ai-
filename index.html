@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot</h1>
+        <div id="chat-window" class="chat-window"></div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off" required />
+            <button type="submit">Send</button>
+        </form>
+        <div class="buttons">
+            <button id="new-chat-btn">New Chat</button>
+            <button id="view-history-btn">View History</button>
+            <button id="delete-history-btn">Delete History</button>
+        </div>
+        <div id="history-window" class="history-window hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
