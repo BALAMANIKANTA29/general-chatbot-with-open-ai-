@@ -240,4 +240,4 @@ For issues, questions, or suggestions:
 
 **Last Updated**: 2025-07-13
 
-Made with ❤️ by [BALAMANIKANTA29](https://github.com/BALAMANIKANTA29)
+Made by [BALAMANIKANTA29](https://github.com/BALAMANIKANTA29)
